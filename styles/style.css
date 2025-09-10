@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9f9f9;
+    justify-content: center;
+    padding: 50px;
+    margin: 0;
+}
+
+.todo-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.mainTitle {
+    text-align: center;
+    color: black;
+}
+
+#todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid darkgrey;
+    outline: none;
+    margin-bottom: 2px;
+}
+
+button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.task-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    gap: 10px;
+    transition: opacity 0.2s ease;
+}
+
+.task-row.dragging {
+    opacity: 0.5;
+}
+
+.task-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: red;
+}
+
+.check-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.check-btn i {
+    color: green;
+}
+
+.delete-btn i {
+    color: darkred;
+}
